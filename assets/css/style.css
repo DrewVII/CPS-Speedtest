@@ -1,0 +1,75 @@
+@font-face {
+    font-family: special;
+    src: url("../fonts/JosefinSans-Regular.ttf");
+}
+
+.gameTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 57px;
+    animation-name: slideDownTitle;
+    animation-duration: 3s;
+}
+
+@keyframes slideDownTitle {
+    from {margin-top: -62px;}
+    to {margin-top: 57px;}
+}
+
+@keyframes appearance {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes appearance {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.game {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #213838;
+    padding: 30px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-animation: appearance 3s ease 0s normal forwards 1;
+    animation: appearance 3s ease 0s normal forwards 1;
+}
+
+body {
+    color: antiquewhite;
+    background: rgb(22,37,37);
+    background: linear-gradient(180deg, rgba(22,37,37,1) 0%, rgba(33,56,56,1) 35%, rgba(52,88,88,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'special';
+    font-weight: 400;
+}
+
+.btn {
+    border: none;
+    background-color: aliceblue;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 16px;
+    color: aliceblue;
+    background-color: rgb(61, 102, 102);
+}
+
+/*
+@media screen and (max-width: 480px) {
+    body{
+        width: 1em;
+    }
+}
+*/
